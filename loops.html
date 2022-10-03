@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON_Iteration</title>
+</head>
+<body>
+    <script>
+        
+        //for in 
+        var object = { a: 1, b: 2, c: 3 };
+
+        for (var property in object) {
+            console.log(`${property}: ${object[property]}`);
+        }
+
+        //for of 
+        var num =[1,2,3,4,5]
+        for(var element of num){
+            console.log(element)
+        }
+
+        //for loop
+        var numbers = [ 10, 20, 30, 40, 50] 
+        for (var i=0; i < numbers.length; i++) {
+        console.log(numbers[i])
+        }
+
+        //for each
+        var names = ["jerry", "tom", "pluto", "micky", "mini"];
+        names.forEach(myFun);
+        function myFun(currentValue, index) {
+        console.log("Index in array is: "+index + " ::  Value is: "+currentValue);
+        }
+    </script>
+</body>
+</html>
